@@ -57,7 +57,7 @@ random-joke-generator/
 ├── public/
 │   └── index.html
 ├── src/
-│   ├── components/
+│   ��── components/
 │   │   ├── JokeDisplay.jsx
 │   │   ├── CategoryFilter.jsx
 │   │   └── Favorites.jsx
