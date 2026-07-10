@@ -1,0 +1,147 @@
+.joke-display {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.joke-display:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.joke-display.empty {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.joke-display.empty p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.joke-category {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  width: fit-content;
+  backdrop-filter: blur(10px);
+}
+
+.joke-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.joke-text,
+.joke-setup,
+.joke-delivery {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
+.joke-setup {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.joke-divider {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  opacity: 0.7;
+}
+
+.joke-delivery {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.joke-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.action-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.action-btn:active {
+  transform: scale(0.95);
+}
+
+.favorite-btn {
+  flex: 1;
+  min-width: 120px;
+}
+
+.copy-btn {
+  flex: 1;
+  min-width: 120px;
+}
+
+.share-btn {
+  flex: 1;
+  min-width: 120px;
+}
+
+@media (max-width: 600px) {
+  .joke-display {
+    padding: 1.5rem;
+    min-height: 200px;
+  }
+
+  .joke-text,
+  .joke-setup,
+  .joke-delivery {
+    font-size: 1rem;
+  }
+
+  .joke-actions {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    flex: 1;
+  }
+}
